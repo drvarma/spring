@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="students" class="map.StudentList">
+		<property name="students">
+			<map>
+			<entry key="1" value-ref="stu1"/>
+			<entry key="2" value-ref="stu2"/>
+			<entry key="3" value-ref="stu3"/>
+			</map>
+		</property>
+	</bean>
+	<bean id="stu1" class="map.Student">
+		<property name="name" value="raghu" />
+		<property name="no" value="222" />
+		<property name="marks" value="75" />
+	</bean>
+
+	<bean id="stu2" class="map.Student">
+		<property name="name" value="varma" />
+		<property name="no" value="22" />
+		<property name="marks" value="12" />
+	</bean>
+
+	<bean id="stu3" class="map.Student">
+		<property name="name" value="dantuluri" />
+		<property name="no" value="2" />
+		<property name="marks" value="63362" />
+	</bean>
+</beans>

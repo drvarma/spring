@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="countryApp">
+<head>
+	<title>Angular JS Example</title>
+	<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script src="countries.json"></script>
+</head>
+<body>
+<div ng-controller="countryCtrl">
+<table border="2">
+	<tr>
+		<td>Country Name</td>
+		<td>Code</td>
+	</tr>
+	<tr ng-repeat="country in countries">
+		<td>{{country.name}}</td>
+		<td>{{country.code}}</td>
+	</tr>
+
+</table>
+	
+</div>
+</body>
+</html>
